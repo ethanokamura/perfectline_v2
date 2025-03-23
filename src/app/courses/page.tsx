@@ -1,9 +1,8 @@
-import Link from "next/link.js";
 import { formatCourses } from "@/lib/formatter";
 import { Course } from "@/src/interfaces/course";
 import Card from "../_components/card";
 import style from "./course-list.module.css";
-import CourseListHeader from "./course-list-header";
+import Header from "../_components/header";
 
 async function getCourses(): Promise<Course[]> {
   const data = await fetch('http://localhost:3000/api/courses').then((res) => res.json());
@@ -16,7 +15,7 @@ export default async function CourseListPage() {
 
   return (
     <main className={style.main}>
-      <CourseListHeader title="PerfectLine" subtitle="Courses" description="A list of courses we offer:" />
+      <Header title="PerfectLine" subtitle="Courses" description="A list of courses we offer:" />
       <div className={style.courseList}>
         {formattedCourses.map((course: Course) => (
           <Card course={course} />
