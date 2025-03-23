@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "firebase": "^11.5.0",
     "gray-matter": "^4.0.3",
     "katex": "^0.16.21",
     "next": "15.2.3",
