@@ -1,0 +1,46 @@
+.card {
+  width: var(--size-14);
+  background-color: var(--surface);
+  border-radius: var(--radius-conditional-2);
+  transition: transform 0.1s linear;
+}
+
+.card a {
+  text-decoration: none;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card img{
+  border-radius: var(--radius-conditional-2) var(--radius-conditional-2) 0px 0px;
+}
+
+.data {
+  padding: var(--size-2) var(--size-5);
+}
+
+.data h1 {
+  font-size: var(--size-5);
+  color: var(--text);
+}
+
+.data p {
+  font-size: var(--size-3);
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--size-3);
+  height: fit-content;
+}
+
+.tags p {
+  background-color: var(--text3);
+  color: var(--background);
+  width: fit-content;
+  border-radius: var(--radius-conditional-2);
+  padding: 0px var(--size-1);
+}
