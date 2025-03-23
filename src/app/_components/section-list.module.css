@@ -1,0 +1,40 @@
+.nav {
+  width: 100%;
+}
+
+.links {
+  margin: 0 0 var(--size-8) 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--size-3);
+  list-style-type: none;
+}
+
+.links li {
+  transition: transform 0.1s linear;
+  background-color: var(--surface);
+  padding: var(--size-1) var(--size-2);
+  border-radius: var(--radius-2);
+  font-size: var(--font-size-2);
+  font-weight: var(--font-weight-6);
+}
+
+.links li:hover {
+  transform: scale(1.1);
+  background-color: var(--accent);
+}
+
+.links li:hover > a {
+  color: var(--surface);
+
+}
+
+.links a {
+  color: var(--text2);
+  text-decoration: none;
+}
+
+.active > a {
+  color: var(--accent);
+}
