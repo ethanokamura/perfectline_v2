@@ -3,7 +3,7 @@ import * as config from "@/lib/constants";
 import Header from "./_components/header";
 import style from "./home.module.css";
 
-export default function Home() {
+export default function HomePage() {
   return (
     <main className={style.home}>
         <Image
