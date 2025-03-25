@@ -131,18 +131,25 @@ code:not(pre code) {
   border-radius: var(--radius-2);
   color: var(--text2);
   background-color: var(--surface);
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 pre {
   font-family: var(--font-jetbrains);
   font-size: var(--font-size-2);
   margin-top: var(--size-2);
-  overflow-x: scroll;
+  overflow-x: hidden;
   border-radius: var(--radius-2);
   max-width: 100%;
   margin-bottom: var(--size-3);
   tab-size: 2;
   padding: var(--size-5);
+  box-shadow: var(--shadow-2);
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 hr {
