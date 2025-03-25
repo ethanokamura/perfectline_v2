@@ -60,9 +60,11 @@ Additional Notes:
 A **path** of length $k$ from vertex $a$ to vertex $b$ is a sequence of vertices:  
 $$ V_0, V_1, V_2, ..., V_k $$  
 Where:  
-- $a = V_0$  
-- $b = V_k$  
-- $(V_i, V_{i+1}) \in E$ for all $i = 0, 1, ..., k-1$ (i.e., each pair of consecutive vertices is connected by an edge).  
+$$
+a = V_0, \;\;\; b = V_k
+$$
+
+$(V_i, V_{i+1}) \in E \text{ for all } i = 0, 1, ..., k-1$ (i.e., each pair of consecutive vertices is connected by an edge).  
 
 - A **simple path** means all vertices on the path are distinct.  
 
