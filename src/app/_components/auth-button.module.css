@@ -1,0 +1,9 @@
+.pfp {
+  border-radius: 50%;
+}
+
+.button {
+  background-color: var(--accent);
+  color: var(--background);
+  height: fit-content;
+}
