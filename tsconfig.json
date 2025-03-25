@@ -23,6 +23,7 @@
       "@/*": ["./*"],
       "@/interfaces/*": ["src/interfaces/*"],
       "@/lib/*": ["src/lib/*"],
+      "@/firebase/*": ["src/firebase/*"],
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
