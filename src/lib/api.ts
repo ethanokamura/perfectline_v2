@@ -1,4 +1,5 @@
 import { Page } from "@/src/interfaces/page";
+import { InfoPage } from "@/src/interfaces/info-page";
 import { Section } from "@/src/interfaces/section";
 import fs from "fs";
 import matter from "gray-matter";
@@ -6,6 +7,7 @@ import { join } from "path";
 import { markdownToHtml } from "./markdownToHtml";
 
 const postsDirectory = join(process.cwd(), "content", "courses");
+const infoDirectory = join(process.cwd(), "content", "info");
 
 export function getPageSlugs(): string[] {
   function getAllFiles(dirPath: string, arrayOfFiles: string[] = []) {
@@ -25,6 +27,20 @@ export function getPageSlugs(): string[] {
 
   return getAllFiles(postsDirectory);
 }
+
+export async function getInfoPageBySlug(slug: string): Promise<InfoPage | null> {
+  const fullPath = join(infoDirectory, `${slug}.md`);
+  
+  if (!fs.existsSync(fullPath)) return null;
+
+  const fileContents = fs.readFileSync(fullPath, "utf8");
+  const { data, content } = matter(fileContents);
+  
+  const htmlContent = await markdownToHtml(content);
+
+  return { ...data, slug: slug, content: htmlContent } as InfoPage;
+}
+
 
 export async function getPageBySlug(course: string, section: string): Promise<Page | null> {
   const fullPath = join(postsDirectory, course, `${section}.md`);
