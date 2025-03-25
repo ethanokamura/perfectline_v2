@@ -1,12 +1,19 @@
 .nav {
   color: var(--accent);
   max-width: 100%;
-  padding: var(--size-3) var(--size-8) var(--size-3) var(--size-8);
+  padding: var(--size-5) var(--size-8);
   display: flex;
   gap: var(--size-2);
   justify-content: space-between;
   align-items: center;
   position: relative;
+}
+
+.menu {
+  display: flex;
+  gap: var(--size-5);
+  align-items: center;
+  justify-content: center;
 }
 
 .links {
@@ -17,6 +24,7 @@
 }
 
 .links li {
+  align-content: center;
   transition: transform 0.1s linear;
 }
 
@@ -24,9 +32,3 @@
   transform: scale(1.25);
 }
 
-.links a {
-  color: var(--accent);
-  text-decoration: none;
-  font-size: var(--font-size-4);
-  font-weight: var(--font-weight-8);
-}
