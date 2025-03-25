@@ -3,6 +3,7 @@ import { Section } from "@/src/interfaces/section";
 import fs from "fs";
 import matter from "gray-matter";
 import { join } from "path";
+import { markdownToHtml } from "./markdownToHtml";
 
 const postsDirectory = join(process.cwd(), "content", "courses");
 
@@ -25,38 +26,30 @@ export function getPageSlugs(): string[] {
   return getAllFiles(postsDirectory);
 }
 
-export function getPageBySlug(course: string, section: string): Page | null {
+export async function getPageBySlug(course: string, section: string): Promise<Page | null> {
   const fullPath = join(postsDirectory, course, `${section}.md`);
   
   if (!fs.existsSync(fullPath)) return null;
 
   const fileContents = fs.readFileSync(fullPath, "utf8");
   const { data, content } = matter(fileContents);
+  
+  const htmlContent = await markdownToHtml(content);
 
-  return { ...data, slug: `${course}/${section}`, content } as Page;
+  return { ...data, slug: `${course}/${section}`, content: htmlContent } as Page;
 }
 
-export function getAllPages(): Page[] {
-  const slugs = getPageSlugs();
+export async function getCourseSections(course: string): Promise<Section[]> {
+  const slugs = await getPageSlugs();
 
-  return slugs
-    .map((slug) => {
-      const [course, section] = slug.split("/");
-      if (!course || !section) return null;
-      return getPageBySlug(course, section);
-    })
-    .filter((page): page is Page => page !== null) // Type guard to remove null values
-    .sort((a, b) => (a.order > b.order ? -1 : 1));
-}
+  // Filter only sections belonging to the given course
+  const filteredSlugs = slugs.filter((slug) => slug.startsWith(`${course}/`));
 
-export function getCourseSections(course: string): Section[] {
-  const slugs = getPageSlugs();
-
-  return slugs
-    .filter((slug) => slug.startsWith(`${course}/`)) // Keep only sections for this course
-    .map((slug) => {
+  // Fetch all sections asynchronously
+  const sections = await Promise.all(
+    filteredSlugs.map(async (slug) => {
       const section = slug.split("/")[1]; // Extract section name
-      const page = getPageBySlug(course, section);
+      const page = await getPageBySlug(course, section);
       if (!page) return null;
 
       return {
@@ -65,7 +58,10 @@ export function getCourseSections(course: string): Section[] {
         order: page.order,
       } as Section;
     })
-    .filter((section) => section !== null)
-    .sort((a:Section, b:Section) => a.order - b.order)
-    .map((section) => section  as Section)
+  );
+
+  // Remove null values, sort by order, and return
+  return sections
+    .filter((section): section is Section => section !== null) // Type guard to remove nulls
+    .sort((a, b) => a.order - b.order);
 }
