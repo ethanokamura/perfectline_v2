@@ -3,6 +3,7 @@
   background-color: var(--surface);
   border-radius: var(--radius-conditional-2);
   transition: transform 0.1s linear;
+  box-shadow: var(--shadow-2);
 }
 
 .card a {
@@ -11,6 +12,7 @@
 
 .card:hover {
   transform: scale(1.1);
+  box-shadow: var(--shadow-4);
 }
 
 .card img{

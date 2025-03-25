@@ -4,7 +4,7 @@ import style from "./card.module.css";
 import Image from "next/image";
 
 type Props = {
-  course: Course
+  course: Course;
 };
 
 export default async function Card({ course }: Props) {
