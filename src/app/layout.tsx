@@ -1,17 +1,16 @@
 import type { Metadata } from "next";
 import { Rubik, JetBrains_Mono } from "next/font/google";
-
 import * as config from "@/lib/constants";
 
 import "./globals.css";
 import "katex/dist/katex.min.css";
-import "highlight.js/styles/github-dark-dimmed.css";
 
 import NavMenu from "./nav-menu";
 import Footer from "./_components/footer";
+import AuthProvider from "./auth-provider";
+import { ThemeProvider } from "next-themes";
 
 const rubik = Rubik({
-  weight: ["400", "700", "800", "900"],
   variable: "--font-rubik",
   subsets: ["latin"],
   display: "swap",
@@ -63,12 +62,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en"  className={`${rubik.variable} ${jetbrains.variable}`}>
-      <body >
-        <NavMenu />
-        {children}
-        <Footer name={config.title} />
-      </body>
-    </html>
+    <AuthProvider>
+      <html lang="en"  className={`${rubik.variable} ${jetbrains.variable}`} suppressHydrationWarning> 
+        <body>
+            <ThemeProvider>
+              <NavMenu />
+              {children}
+              <Footer name={config.title} />
+            </ThemeProvider>
+        </body>
+      </html>
+    </AuthProvider>
   );
 }
