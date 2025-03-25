@@ -13,4 +13,3 @@ export async function GET() {
     return NextResponse.json({ message: 'Error fetching data' }, { status: 500 });
   }
 }
-
