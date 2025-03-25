@@ -6,7 +6,7 @@ type Props = {
   description: string;
 };
 
-export default async function Header({ title, subtitle, description }: Props) {
+export default function Header({ title, subtitle, description }: Props) {
   return (
     <header className={styles.header}>
       <h1>{title}</h1>
