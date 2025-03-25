@@ -28,18 +28,6 @@
   text-decoration: var(--shiki-dark-text-decoration) !important;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --background: #10141a;
-    --surface: #151b24;
-    --accent: #61AFEF;
-    --text: #e1e6f0;
-    --text2: #969eb0;
-    --text3: #666e7d;
-  }
-}
-
-
 *::-webkit-scrollbar { display: none; }
 
 * {

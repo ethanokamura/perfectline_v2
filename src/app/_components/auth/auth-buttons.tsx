@@ -2,7 +2,7 @@
 
 import { useSession, signIn, signOut } from "next-auth/react";
 import style from "./auth-button.module.css";
-import Loading from "./loading";
+import Loading from "../loading";
 import Link from "next/link";
 import Image from "next/image";
 

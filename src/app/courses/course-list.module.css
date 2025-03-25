@@ -1,29 +1,14 @@
 .main {
   max-width: var(--size-content-5);
-  margin: auto;
   padding: var(--size-10) var(--size-7) var(--size-7) var(--size-7);
-  text-align: center;
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: var(--size-7);
 }
 
 .courseList {
-  width: 100%;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: var(--size-5);
-}
-
-.header h1 {
-  font-size: var(--size-9);
-}
-
-.header h2 {
-  color: var(--accent);
-}
-
-.header h3 {
-  color: var(--text2);
 }

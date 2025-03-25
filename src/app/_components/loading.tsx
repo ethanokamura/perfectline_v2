@@ -1,4 +1,4 @@
-import style from './loading.module.css';
+import style from '../loading.module.css';
 
 // Loading Spinner
 export default function Loading() {
