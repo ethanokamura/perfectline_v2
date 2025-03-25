@@ -8,6 +8,8 @@ Our curriculum covers essential programming concepts and real-world applications
 
 Join **PerfectLine** today to embark on an exciting journey in software development!
 
+Version 2 is still in production, but you can check out the current Astro App [here](https://www.perfectline.io/)
+
 ## Why Choose PerfectLine?
 
 At PerfectLine, our mission is to provide a **personalized learning experience**. Having taught myself programming at a young age, I know the importance of structured learning and avoiding common pitfalls. After successfully navigating through my own college courses and teaching programming for two years, I’m here to help students learn in an effective, engaging way.
