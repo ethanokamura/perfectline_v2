@@ -100,9 +100,7 @@ button {
 a {
   color: var(--accent);
   text-decoration: none;
-  font-size: var(--font-size-4);
   font-weight: var(--font-weight-8);
-  text-transform: capitalize;
   transition: transform 0.1s linear;
 }
 

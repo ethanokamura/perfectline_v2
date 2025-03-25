@@ -4,9 +4,9 @@ import { mapFirebaseUserToAppUser } from "@/src/lib/user";
 import { Metadata } from "next";
 import Image from "next/image";
 import { redirect } from "next/navigation";
-import ThemeToggle from "../_components/theme-toggle";
+import ThemeToggle from "../_components/theme/theme-toggle";
 import style from "./dashboard.module.css";
-import { SignOutButton } from "../_components/buttons";
+import { SignOutButton } from "../_components/auth/auth-buttons";
  
 export const metadata: Metadata = {
   title: 'User Dashboard',

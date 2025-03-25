@@ -5,9 +5,9 @@ import * as config from "@/lib/constants";
 import "./globals.css";
 import "katex/dist/katex.min.css";
 
-import NavMenu from "./nav-menu";
+import NavMenu from "./_components/nav-bar/nav-menu";
 import Footer from "./_components/footer";
-import AuthProvider from "./auth-provider";
+import AuthProvider from "./_components/auth/auth-provider";
 import { ThemeProvider } from "next-themes";
 
 const rubik = Rubik({

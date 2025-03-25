@@ -1,10 +1,10 @@
 import { notFound } from 'next/navigation';
 import { getPageBySlug, getCourseSections } from '@/src/lib/api';
-import SectionList from "@/src/app/_components/section-list";
-import { SectionHeader } from '@/src/app/_components/section-header';
-import { SectionBody } from '@/src/app/_components/section-body';
+import SectionList from "@/src/app/_components/markdown/section-list";
+import { SectionHeader } from '@/src/app/_components/markdown/section-header';
+import { SectionBody } from '@/src/app/_components/markdown/section-body';
 
-export default async function Page({ params }: { params: Promise<{ course: string, section: string }> }) {
+export default async function SectionPage({ params }: { params: Promise<{ course: string, section: string }> }) {
   const { course, section } = await params;
   const page = await getPageBySlug(course, section);
   const sections = await getCourseSections(course);

@@ -1,7 +1,7 @@
 import * as config from "@/lib/constants";
 import Header from "./_components/header";
 import style from "./home.module.css";
-import ThemedImage from "./_components/theme-image";
+import ThemedImage from "./_components/theme/theme-image";
 
 export default function HomePage() {
   return (
