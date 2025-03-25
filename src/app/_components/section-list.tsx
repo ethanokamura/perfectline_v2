@@ -10,7 +10,7 @@ type Props = {
   sections: Section[];
 };
 
-export default async function SectionList({ course, sections }: Props) {
+export default function SectionList({ course, sections }: Props) {
   const pathname = usePathname();
   return (
     <nav className={style.nav}>

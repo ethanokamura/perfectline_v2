@@ -17,7 +17,6 @@
   padding: var(--size-1) var(--size-2);
   border-radius: var(--radius-2);
   font-size: var(--font-size-2);
-  font-weight: var(--font-weight-6);
 }
 
 .links li:hover {
@@ -33,6 +32,8 @@
 .links a {
   color: var(--text2);
   text-decoration: none;
+  font-weight: var(--font-weight-5);
+  font-size: var(--font-size-3);
 }
 
 .active > a {
