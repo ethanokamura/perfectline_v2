@@ -2,15 +2,15 @@
 
 import { useSession, signIn, signOut } from "next-auth/react";
 import style from "./auth-button.module.css";
-import Loading from "../loading";
 import Link from "next/link";
 import Image from "next/image";
+import AuthButtonSkeleton from "./image-skeleton";
 
 export function SignInButton() {
   const { data: session, status } = useSession();
 
   if (status === 'loading') {
-    return <Loading />
+    return <AuthButtonSkeleton />
   }
 
   if (status === 'authenticated') {

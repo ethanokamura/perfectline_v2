@@ -1,5 +1,5 @@
 import * as config from "@/lib/constants";
-import Header from "./_components/header";
+import Header from "./_components/header/header";
 import style from "./home.module.css";
 import ThemedImage from "./_components/theme/theme-image";
 

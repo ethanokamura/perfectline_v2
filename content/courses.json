@@ -53,6 +53,19 @@
       "order": 4
     },
     {
+      "title": "Maze Generator",
+      "description": "Practice DSA topics with an interactive maze generator and solver.",
+      "author": "Ethan Okamura",
+      "date": "04-01-2025",
+      "tags": [ "cpp", "advanced", "data-structures" ],
+      "published": true,
+      "lang": "cpp",
+      "course": "maze",
+      "img": "/imgs/thumbnails/trees.webp",
+      "alt": "trees-thumbnail",
+      "order": 5
+    },
+    {
       "title": "Introduction to Flutter",
       "description":" In this section, we will cover the basics of Flutter.",
       "author": "Ethan Okamura",

@@ -16,6 +16,9 @@
 }
 
 .card img{
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
   border-radius: var(--radius-conditional-2) var(--radius-conditional-2) 0px 0px;
 }
 
@@ -45,4 +48,42 @@
   width: fit-content;
   border-radius: var(--radius-conditional-2);
   padding: 0px var(--size-1);
+}
+
+.skeleton {
+  width: var(--size-14);
+  background-color: var(--surface);
+  height: var(--content-1);
+  box-shadow: var(--shadow-2);
+}
+
+.skeletonImage {
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  border-radius: var(--radius-conditional-2) var(--radius-conditional-2) 0px 0px;
+  background-color: var(--text3);
+}
+
+.skeletonData {
+  padding: var(--size-5);
+  display: grid;
+  align-items: start;
+  gap: var(--size-3);
+}
+
+.skeletonTitle {
+  width: 100%;
+  height: 14px;
+  border-radius: var(--radius-1);
+  background-color: var(--text3);
+  animation: var(--animation-blink);
+}
+
+.skeletonDescription {
+  width: 100%;
+  height: 10px;
+  border-radius: var(--radius-1);
+  background-color: var(--text3);
+  animation: var(--animation-blink);
 }

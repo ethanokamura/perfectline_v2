@@ -1,0 +1,105 @@
+.card {
+  display: grid;
+  gap: var(--size-5);
+  margin: auto;
+  background-color: var(--surface);
+  width: fit-content;
+  padding: var(--size-5);
+  border-radius: var(--radius-2);
+  box-shadow: var(--shadow-2);
+}
+
+.header {
+  display: flex;
+  gap: var(--size-5);
+}
+
+.header h1 {
+  font-size: var(--font-size-6);
+}
+
+.header h2 b {
+  font-size: var(--font-size-4);
+  color: var(--accent);
+}
+
+.header h2 {
+  font-size: var(--font-size-4);
+  color: var(--text2);
+}
+
+.image {
+  border-radius: var(--radius-2);
+  box-shadow: var(--shadow-2);
+}
+
+.card button {
+  background-color: var(--text);
+  color: var(--background);
+  box-shadow: var(--shadow-2);
+}
+
+.card button:hover {
+  box-shadow: var(--shadow-4);
+}
+
+.card b {
+  color: var(--text);
+}
+
+.skeletonDetails {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-3);
+}
+
+.skeletonCard {
+  display: grid;
+  width: var(--size-14);
+  gap: var(--size-5);
+  margin: auto;
+  background-color: var(--surface);
+  padding: var(--size-5);
+  border-radius: var(--radius-2);
+  box-shadow: var(--shadow-2);
+}
+
+.skeletonImage {
+  width: 128px;
+  height: 128px;
+  border-radius: var(--radius-2);
+  box-shadow: var(--shadow-2);
+  background-color: var(--text3);
+}
+
+.skeletonName {
+  border-radius: var(--radius-1);
+  height: var(--size-7);
+  background-color: var(--text3);
+  width: var(--size-11);
+  animation: var(--animation-blink);
+}
+
+.skeletonButton {
+  border-radius: var(--radius-2);
+  height: var(--size-8);
+  width: 100%;
+  background-color: var(--text);
+  animation: var(--animation-blink);
+}
+
+.skeletonLevel {
+  border-radius: var(--radius-1);
+  height: var(--size-5);
+  width: var(--size-10);
+  background-color: var(--text3);
+  animation: var(--animation-blink);
+}
+
+.skeletonContent {
+  border-radius: var(--radius-1);
+  height: var(--size-2);
+  width: 100%;
+  background-color: var(--text3);
+  animation: var(--animation-blink);
+}

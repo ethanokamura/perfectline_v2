@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import * as config from "@/lib/constants";
-import Header from "./_components/header";
+import Header from "./_components/header/header";
 import style from "./home.module.css";
 
 export default function Error({

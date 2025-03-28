@@ -1,8 +1,8 @@
 import React from 'react';
-import { Course } from '@/src/interfaces/course'; // Assuming Course interface
-import Card from '../_components/card';
+import { Course } from '@/src/interfaces/course';
+import Card from '@/src/app/_components/card/card';
 import style from './course-list.module.css';
-import Header from '../_components/header';
+import Header from '@/src/app/_components/header/header';
 
 async function getCourses() {
   const data = await fetch(process.env.NEXT_PUBLIC_API_URL + '/api/courses', {

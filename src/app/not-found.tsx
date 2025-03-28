@@ -1,6 +1,6 @@
 import Link from "next/link";
 import style from "./home.module.css";
-import Header from "./_components/header";
+import Header from "./_components/header/header";
 
 export default function Custom404() {
   return (

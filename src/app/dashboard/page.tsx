@@ -2,11 +2,9 @@ import { auth } from "@/lib/auth"
 import { firestore } from "@/lib/firestore"
 import { mapFirebaseUserToAppUser } from "@/src/lib/user";
 import { Metadata } from "next";
-import Image from "next/image";
 import { redirect } from "next/navigation";
-import ThemeToggle from "../_components/theme/theme-toggle";
-import style from "./dashboard.module.css";
-import { SignOutButton } from "../_components/auth/auth-buttons";
+import UserCard from "../_components/user-card/user-card";
+import SkeletonUserCard from "../_components/user-card/skeleton-user-card";
  
 export const metadata: Metadata = {
   title: 'User Dashboard',
@@ -44,39 +42,7 @@ export default async function DashboardPage() {
 
   return (
     <main>
-      <div className={style.card}>
-        <div className={style.header}>
-          <Image
-            className={style.image}
-            src={user.photoURL}
-            width={128}
-            height={128}
-            alt="User Profile Picture"
-            />
-          <div className={style.details}>
-            <h1>{user.displayName}</h1>
-            <h2>LVL <b>{user.xp}</b></h2>
-          </div>
-        </div>
-        <ThemeToggle />
-        <SignOutButton />
-        <div>
-          <p><b>User ID:</b> {user.uid}</p>
-          <p><b>Membership:</b> {user.membership}</p>
-          <p><b>Email:</b> {user.email}</p>      
-          { user.purchasedCourses.length == 0
-            ? <p>No purchased courses</p> : 
-            <>
-              <p><b>Purchased Courses:</b></p>
-              <ul>
-                {user.purchasedCourses.map((course: string) => 
-                  <li key={course}>{course}</li>
-                )}
-              </ul>
-            </>
-          }
-        </div>
-      </div>
+      <UserCard user={user} />
     </main>
   );
 }

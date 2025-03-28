@@ -39,6 +39,7 @@
 
 html {
   height: 100vh;
+  height: 100dvh;
   width: 100vw;
   padding: 0;
   margin: 0;
@@ -121,9 +122,9 @@ b {
 
 main {
   max-width: var(--content-width);
-  padding: var(--size-7) var(--size-10);
+  padding: min(var(--size-7), 5%) min(var(--size-10), 5%);
   margin: auto;
-  padding-bottom: var(--size-content-1);
+  padding-bottom: min(var(--size-content-1), 40%);
 }
 
 code:not(pre code) {
@@ -203,3 +204,17 @@ footer {
   font-weight: var(--font-weight-6);
 }
 
+
+/* Media Queries - For responsive design */
+
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {}
+
+/* Tablet (max-width: 1024px) */
+@media (max-width: 1024px) {}
+
+/* Desktop (min-width: 1025px) */
+@media (min-width: 1025px) {}
+
+/* Large screens (min-width: 1440px) */
+@media (min-width: 1440px) {}

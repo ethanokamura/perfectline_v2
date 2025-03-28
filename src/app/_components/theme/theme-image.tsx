@@ -22,7 +22,7 @@ export default function ThemedImage({ light, dark, x, y, alt }: Props) {
   }, []);
 
   // Prevent hydration mismatch
-  if (!mounted) return <div className={style.skeleton}>?</div>; 
+  if (!mounted) return <div className={style.skeletonImage}></div>; 
 
   // Get the actual theme (fallback to system preference)
   const currentTheme = theme === "system" ? systemTheme : theme;

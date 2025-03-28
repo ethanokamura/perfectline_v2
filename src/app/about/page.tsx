@@ -9,7 +9,7 @@ export default async function AboutPage() {
     return notFound();
   }
   return (
-    <main >
+    <main>
       {/* Header */}
       <SectionHeader title={page.title} description={page.description} />
       <hr/>
