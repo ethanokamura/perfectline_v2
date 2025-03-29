@@ -4,7 +4,6 @@ import { mapFirebaseUserToAppUser } from "@/src/lib/user";
 import { Metadata } from "next";
 import { redirect } from "next/navigation";
 import UserCard from "../_components/user-card/user-card";
-import SkeletonUserCard from "../_components/user-card/skeleton-user-card";
  
 export const metadata: Metadata = {
   title: 'User Dashboard',
