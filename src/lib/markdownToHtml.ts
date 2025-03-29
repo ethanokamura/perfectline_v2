@@ -2,6 +2,7 @@ import { unified } from 'unified';
 import remarkParse from 'remark-parse';
 import remarkRehype from 'remark-rehype';
 import rehypeStringify from 'rehype-stringify';
+import rehypeExternalLinks from 'rehype-external-links';
 import rehypeShiki from '@shikijs/rehype';
 import rehypeKatex from 'rehype-katex';
 import remarkGfm from 'remark-gfm';
@@ -24,6 +25,7 @@ export async function markdownToHtml(markdown: string) {
       cssVariablePrefix: '--shiki-',
       wrap: true,
     }) // Adds syntax highlighting
+    .use(rehypeExternalLinks, { target: '_blank', rel: ['noopener', 'noreferrer'] }) // Add target="_blank"
     .use(rehypeStringify) // Converts rehype AST to HTML string
     .process(markdown);
 
