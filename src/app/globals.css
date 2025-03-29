@@ -45,12 +45,7 @@ html {
   margin: 0;
   
   color: var(--text);
-  background: linear-gradient(
-    var(--background-2),
-    var(--background)
-  );
-  background-size: cover;
-  background-attachment: fixed;
+  background-color: var(--background-2);
 
   font-family: var(--font-rubik);
   -webkit-font-smoothing: antialiased;
@@ -62,6 +57,12 @@ body {
   margin: 0;
   width: 100%;
   height: 100%;
+  background: linear-gradient(
+    var(--background-2),
+    var(--background)
+  );
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 h1, h2, h3 {
