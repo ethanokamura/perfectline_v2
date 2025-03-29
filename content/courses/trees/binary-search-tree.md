@@ -199,5 +199,5 @@ delete(value):
 This pseudocode covers the essential operations of a Binary Search Tree (BST) while maintaining simplicity and clarity.
 
 If you want to see a real example check out my source code:
-- <a href="https://github.com/ethanokamura/dsa/tree/main/trees/bst-1" target="_blank">Example 1</a>.
-- <a href="https://github.com/ethanokamura/dsa/tree/main/trees/bst-2" target="_blank">Example 2</a>.
+- [Example 1](https://github.com/ethanokamura/dsa/tree/main/trees/bst-1).
+- [Example 2](https://github.com/ethanokamura/dsa/tree/main/trees/bst-2).

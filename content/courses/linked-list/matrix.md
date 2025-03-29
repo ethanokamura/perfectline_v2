@@ -139,7 +139,7 @@ $$
 ## Conclusion
 We have implemented matrix addition, subtraction, and multiplication using a linked list representation. This approach provides flexibility in handling sparse matrices, though indexing is more complex compared to arrays.
 
-For a working example of a matrix ADT in C, check out this <a href="https://github.com/ethanokamura/dsa/tree/main/linked-list/c/matrix" target="_blank">GitHub repository</a>.
+For a working example of a matrix ADT in C, check out this [GitHub repository](https://github.com/ethanokamura/dsa/tree/main/linked-list/c/matrix).
 
 Next, we will explore a `BigInteger` class.
 

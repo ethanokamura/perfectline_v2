@@ -57,13 +57,13 @@ Dart also features **just-in-time (JIT) compilation**, which compiles source cod
 
 Dart code runs inside an **isolate**, which is a separate chunk of memory executing a **single event loop**—allowing for efficient **asynchronous** programming. Additionally, multiple isolates can run in parallel, enabling true **concurrent execution** for performance-intensive tasks.  
 
-Dart has a strong developer community, with **thousands of open-source packages** available on <a href="https://pub.dev/" target="_blank">pub.dev</a>.  
+Dart has a strong developer community, with **thousands of open-source packages** available on [pub.dev](https://pub.dev/)
 
 ---
 
 ## Installation  
 
-To get started, download the <a href="https://docs.flutter.dev/get-started/install" target="_blank">Flutter SDK</a>, which includes the **Dart SDK**.  
+To get started, download the [Flutter SDK](https://docs.flutter.dev/get-started/install), which includes the **Dart SDK**.  
 
 Be sure to update your path after installation is complete (check out the official docs)
 

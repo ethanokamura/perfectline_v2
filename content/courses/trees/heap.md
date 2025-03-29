@@ -241,4 +241,4 @@ std::pair<int*, int> heap_sort() {
 ## Conclusion
 We have successfully implemented the **core functions** of a **priority queue** using a heap! Be sure to **test** your code and verify its functionality.
 
-Check out the source code <a href="https://github.com/ethanokamura/dsa/tree/main/trees/heap" target="_blank">here</a>.
+Check out the source code [here](https://github.com/ethanokamura/dsa/tree/main/trees/heap).

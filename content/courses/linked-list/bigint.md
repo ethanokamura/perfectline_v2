@@ -185,5 +185,5 @@ The function above is more pseudo-code-oriented so keep in might that this is no
 
 To wrap this up, the point of a `BigInteger` is to allow us to compute large integer values without being limited by the storage capacity of built-in types. The main functions we want to implement are basic arithmetic operations such as addition, subtraction, and multiplication.
 
-Once again, if you get stuck or want to see a working solution, check out my <a href="https://github.com/ethanokamura/dsa/tree/main/linked-list/cpp/bigint" target="_blank" >source code</a>.
+Once again, if you get stuck or want to see a working solution, check out my [source code](https://github.com/ethanokamura/dsa/tree/main/linked-list/cpp/bigint).
 

@@ -251,4 +251,4 @@ deleteFixup(T, x):
 
 And just like that, you should now be familiar with the basics of the Red-Black Tree structure and properties!
 
-If you want to see it in action my source code is avaliable <a href="https://github.com/ethanokamura/dsa/tree/main/trees/rbt" target="_blank">here</a>.
+If you want to see it in action my source code is avaliable [here](https://github.com/ethanokamura/dsa/tree/main/trees/rbt).

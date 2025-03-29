@@ -24,7 +24,7 @@ In our case, using the index operator `[]` to access elements in a linked list c
 
 2. **No Direct Access**: Unlike arrays, where elements are stored contiguously in memory and can be accessed directly using pointer arithmetic, linked lists require sequential traversal to reach a specific node. Each traversal step involves following the next pointer of the current node.
 
-3. **Time Complexity**: While both methods have a time complexity of O(n) for accessing an element at a specific index, using the index operator involves more overhead because it requires traversing the list sequentially from the beginning, while direct traversal using pointers can be more efficient. We cover time complexity in our <a href="https://perfectline.io/courses/cpp/dsa/complexity" target="_blank">DSA course</a>.
+3. **Time Complexity**: While both methods have a time complexity of O(n) for accessing an element at a specific index, using the index operator involves more overhead because it requires traversing the list sequentially from the beginning, while direct traversal using pointers can be more efficient. We cover time complexity in our [DSA course](https://perfectline.io/courses/cpp/dsa/complexity).
 
 ## Advantages
 This being said I think the indexing is worth it because it allows us to traverse to a specific node without using nodes. When working with other structures with a linked list in the background, we will want to access data at a specific point and will not have access to the node type.

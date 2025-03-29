@@ -184,5 +184,5 @@ std::vector<int> find_adj(int v) {
 ## Conclusion:
 
 If you want to see a working example of breadth first search, check out my git repositories:
-- <a href="https://github.com/ethanokamura/dsa/tree/main/graphs/bfs/cpp" target="_blank">Written in C++</a>
-- <a href="https://github.com/ethanokamura/dsa/tree/main/graphs/bfs/c" target="_blank">Written in C</a>
+- [Written in C++](https://github.com/ethanokamura/dsa/tree/main/graphs/bfs/cpp)
+- [Written in C](https://github.com/ethanokamura/dsa/tree/main/graphs/bfs/c)

@@ -110,4 +110,4 @@ Linked lists come in different forms, such as singly linked lists, doubly linked
 Linked lists are relatively easy to implement and understand compared to more complex data structures like trees and graphs. This simplicity makes them an excellent choice for learning data structures and algorithms.
 
 
-If you want to access the source code for the completed list, I have it posted for public access <a href="https://github.com/ethanokamura/dsa/blob/main/linked-list/cpp/linked_list/linked_list.h" target="_blank">here</a>
+If you want to access the source code for the completed list, I have it posted for public access [here](https://github.com/ethanokamura/dsa/blob/main/linked-list/cpp/linked_list/linked_list.h).

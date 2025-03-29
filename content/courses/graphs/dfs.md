@@ -159,4 +159,4 @@ By performing DFS on the transposed graph \( G^T \) in decreasing finish time or
 
 By finding SCCs, we gain deep insights into the structure and relationships within a directed graph, which is pivotal for both theoretical and practical graph-related problems. 
 
-To see a working example of DFS written in C check out this <a href="https://github.com/ethanokamura/dsa/tree/main/graphs/dfs/c" target="_blank" >git repo</a>!
+To see a working example of DFS written in C check out this [git repo](https://github.com/ethanokamura/dsa/tree/main/graphs/dfs/c)!
